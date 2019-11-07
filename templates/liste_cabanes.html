@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liste des cabanes</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <h1>Liste des cabanes</h1>
+  <ul>
+  {% for cabane in cabanes %}
+    <li>{{cabane['nom']}} ({{cabane['x']}} / {{cabane['y']}})</li>
+  {% endfor %}
+  </ul>
+</body>
+</html>
